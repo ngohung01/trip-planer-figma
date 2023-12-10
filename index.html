@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="./assets/css/myBootstrap.css">
+    <link rel="stylesheet" href="./assets/css/tripPlanner.css">
+
+    <script src="./assets/js/bs-js/bootstrap.js" defer></script>
+</head>
+<body data-bs-theme="dark">
+    <div class="home-page">
+        <!-- header -->
+        <div class="header">
+            <!-- navbar -->
+            <nav class="navbar navbar-expand-lg">
+                <div class="container-fluid">
+                    <!-- Brand-logo -->
+                    <a class="navbar-brand between-center" href="#">
+                        <div class="logo center-center">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="21" height="25" viewBox="0 0 21 25" fill="currentColor">
+                                <path d="M2.51285 14.3138L7.42839 14.1693L9.02104 10.7185C9.1915 10.3492 8.87382 9.9456 8.47681 10.0342C7.15859 10.3282 5.30331 10.8151 4.26172 11.3359C3.26156 11.836 2.51148 12.8675 2.08182 13.6566C1.91103 13.9703 2.15583 14.3243 2.51285 14.3138Z" fill="white"/>
+                                <path d="M18.619 23.628L14.4042 16.2522C14.0338 15.604 13.1092 15.5743 12.6953 16.1956C11.4016 18.1376 9.60367 20.7833 8.76153 21.8359C7.69486 23.1693 6.53931 23.3915 6.09486 23.3359C4.87265 23.2804 2.0949 23.0693 0.761565 22.6693C-0.571768 22.2693 0.12166 21.4507 0.761565 21.1693C1.52536 20.8333 3.42823 20.2359 4.76157 19.8359C6.0949 19.436 7.0949 17.8915 7.42823 17.1693L12.4282 7.66919C13.706 5.05808 16.7282 -0.130812 18.5949 0.00252097C20.4616 0.135854 19.9282 2.16919 19.4282 3.16919L16.7571 8.98285C16.6528 9.20992 16.6367 9.46605 16.713 9.70401C17.6984 12.7776 19.5828 18.6717 20.0949 20.3359C20.5188 21.7134 19.918 22.9716 19.3468 23.709C19.1509 23.9619 18.7777 23.9057 18.619 23.628Z" fill="white"/>
+                            </svg>
+                        </div>
+                        <span class="title fs-20 text-center fw-800">Airtrav</span>
+                    </a>
+
+                    <!-- Menu -->
+                    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                        <div class="navbar-nav between-center">
+                            <a class="nav-link fs-16 fw-500 lh-24 active " aria-current="page" href="#">Things To Do</a>
+                            <a class="nav-link fs-16 fw-500 lh-24" href="#">Tour</a>
+                            <a class="nav-link fs-16 fw-500 lh-24" href="#">Blog</a>
+                        </div>
+                    </div>
+
+                    <div class="navbar-user between-center">
+                        <div class="user-text center-center border-end">
+                            <span class="fs-14 fw-700 lh-21">USD</span>
+                            <span class="fs-14 fw-700 lh-21">FAQ</span>
+                            <div class="icon-bell">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="21" viewBox="0 0 18 21">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M13.2364 15.0854H4.2363V8.58513C4.2363 6.08503 6.23631 4.08496 8.73633 4.08496C11.2364 4.08496 13.2364 6.08503 13.2364 8.58513V15.0854ZM15.2383 14.0855V8.58527C15.2383 5.51516 13.0983 2.94507 10.2383 2.26504V1.58502C10.2383 0.756558 9.56671 0.0849609 8.73828 0.0849609C7.90985 0.0849609 7.23828 0.756558 7.23828 1.58502V2.26504C4.36828 2.94507 2.23828 5.51516 2.23828 8.58527V14.0855L0.238281 16.0855V17.0856H17.2383V16.0855L15.2383 14.0855ZM8.73822 20.085C9.84278 20.085 10.7382 19.1896 10.7382 18.085H6.73824C6.73824 19.1896 7.63366 20.085 8.73822 20.085Z" fill="currentColor"/>
+                                </svg>
+                            </div>
+                        </div>  
+                        <img class="avatar" src="./assets/img/avt.png" alt="user">
+
+                        <!-- Button collapse menu -->
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" >
+                                <path d="M5 8C4.44772 8 4 8.44772 4 9C4 9.55228 4.44772 10 5 10H19C19.5523 10 20 9.55228 20 9C20 8.44772 19.5523 8 19 8H5Z" fill="#777E91"/>
+                                <path d="M5 14C4.44772 14 4 14.4477 4 15C4 15.5523 4.44772 16 5 16H19C19.5523 16 20 15.5523 20 15C20 14.4477 19.5523 14 19 14H5Z" fill="#777E91"/>
+                            </svg>
+                        </button>
+                    
+                    </div>
+                </div>
+              </nav>
+            <!-- /navbar -->
+
+            <!-- content -->
+            <div class="content container-fluid">
+                <div class="row">
+                    <!-- left content -->
+                    <div class="col-6 left-content">
+                        <div class="left-content-wrapper">
+                            <div class="heading-container mb-70 ">
+                                <div class="heading mb-50">
+                                    <div class="hero-title mb-30">
+                                        <span>Travel Planning Made  </span>
+                                        <span style="color: #F5B318;">Easy</span>
+                                        <picture>
+                                            <source media="(max-width: 991.9px)" srcset="./assets/img/Ornament-83-sm.png">
+                                            <img src="./assets/img/Ornament-83.png" alt="ornament">
+                                        </picture>
+                                    </div>
+                                    <div class="bodi-18-medium">
+                                        <span class="heading-body">
+                                            We make it easy to plan and book your next trip with 
+                                            a Day by Day itinerary.
+                                        </span>
+                                    </div>
+                                </div>
+                                <div class="search between-center">
+                                    <input type="search" class="fs-20 fw-700" placeholder="Plan a Trip">
+                                    <button class="btn-icon">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="37" height="36" viewBox="0 0 37 36" fill="none">
+                                            <path fill-rule="evenodd" clip-rule="evenodd" d="M22.0192 10.8978C22.628 10.3359 23.5769 10.3739 24.1389 10.9826L28.985 16.2325C29.5154 16.8071 29.5154 17.6928 28.985 18.2674L24.1389 23.5174C23.577 24.1262 22.628 24.1641 22.0192 23.6022C21.4105 23.0403 21.3725 22.0913 21.9344 21.4826L24.4569 18.75L9.88281 18.75C9.05438 18.75 8.38281 18.0784 8.38281 17.25C8.38281 16.4215 9.05438 15.75 9.88281 15.75L24.4568 15.75L21.9345 13.0174C21.3725 12.4087 21.4105 11.4597 22.0192 10.8978Z" fill="white"/>
+                                        </svg>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="review">
+                                <span class="bodi-16-medium rv-title">Our customers say</span>
+                                <div class="review-wrapper between-center">
+                                    <div class="rate">
+                                        <h3>Excellent</h3>
+                                        <div class="rate-star">
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star-half-stroke"></i>
+                                        </div>
+                                    </div>
+                                    <div class="separate"></div>
+                                    <div class="rv-text">
+                                        <div class="rv-num">4.7</div>
+                                        <span class="bodi-12-medium">
+                                            out of 5 on <strong class="bodi-12-bold">194</strong> reviews
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                            <img src="./assets/img/eliment.png" alt="eliment" class="eliment">
+                        </div>
+                    </div>
+                    <!-- right content -->
+                    <div class="col-6 right-content">
+                        <picture>
+                            <source media="(max-width: 576px)" srcset="./assets/img/Frame-37-sm.png">
+                            <img src="./assets/img/Frame-37.png" alt="ornament">
+                        </picture>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Partner -->
+        <div class="partner center-center">
+            <img srcset="./assets/img/partner/amadeus.png 2x" alt="amadeus">
+            <img srcset="./assets/img/partner/booking.png 2x" alt="booking">
+            <img srcset="./assets/img/partner/cheapflight.png 2x" alt="cheapflight">
+            <img srcset="./assets/img/partner/momondo.png 2x" alt="momondo">
+            <img srcset="./assets/img/partner/trainline.png 2x" alt="trainline">
+            <img srcset="./assets/img/partner/trivago.png 2x" alt="trivago">
+        </div>
+
+        <!-- Trip planning -->
+        <div class="trip-planning center-center">
+            <!-- Heading -->
+            <div class="heading mb-50">
+                <h1 class="mb-25 text-center">Innovative Trip Planning</h1>
+                <p class="bodi-18-regular text-center">
+                    Our Vision is to revolutionize the way people travel by
+                    introducing intelligent trip planning
+                </p>
+            </div>
+            <!-- Cards -->
+            <div class="cards">
+                <!-- Item -->
+                <div class="card-item center-center">
+                    <div class="card-content center-center">
+                        <div class="card-icon center-center">
+                            <img srcset="./assets/img/trip-planning/light.png 2x" alt="sun-light">
+                        </div>
+                        <p class="t-18">
+                            Partner allows you to 
+                            browse multiple carriers 
+                            for travel.
+                        </p>
+                    </div>
+                    <div class="learn-more between-center">
+                        <span class="bodi-12-medium">Learn more</span>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" >
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M14.0909 7.26521C14.4968 6.8906 15.1294 6.9159 15.504 7.32172L18.7348 10.8217C19.0884 11.2047 19.0884 11.7952 18.7348 12.1782L15.504 15.6783C15.1294 16.0841 14.4968 16.1094 14.091 15.7348C13.6851 15.3602 13.6598 14.7276 14.0344 14.3217L15.716 12.5L6 12.5C5.44771 12.5 5 12.0523 5 11.5C5 10.9477 5.44771 10.5 6 10.5L15.716 10.5L14.0344 8.67829C13.6598 8.27247 13.6851 7.63981 14.0909 7.26521Z"/>
+                        </svg>
+                    </div>
+                </div>
+                <!-- Item -->
+                <div class="card-item center-center">
+                    <div class="card-content center-center">
+                        <div class="card-icon center-center">
+                            <img srcset="./assets/img/trip-planning/group-1581.png 2x" alt="group-1581">
+                        </div>
+                        <p class="t-18">
+                            The website is a way for 
+                            partners to communicate 
+                            with their customers.
+                        </p>
+                    </div>
+                    <div class="learn-more between-center">
+                        <span class="bodi-12-medium">Learn more</span>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" >
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M14.0909 7.26521C14.4968 6.8906 15.1294 6.9159 15.504 7.32172L18.7348 10.8217C19.0884 11.2047 19.0884 11.7952 18.7348 12.1782L15.504 15.6783C15.1294 16.0841 14.4968 16.1094 14.091 15.7348C13.6851 15.3602 13.6598 14.7276 14.0344 14.3217L15.716 12.5L6 12.5C5.44771 12.5 5 12.0523 5 11.5C5 10.9477 5.44771 10.5 6 10.5L15.716 10.5L14.0344 8.67829C13.6598 8.27247 13.6851 7.63981 14.0909 7.26521Z"/>
+                        </svg>
+                    </div>
+                </div>
+                <!-- Item -->
+                <div class="card-item center-center">
+                    <div class="card-content center-center">
+                        <div class="card-icon center-center">
+                            <img srcset="./assets/img/trip-planning/book-light.png 2x" alt="book-light">
+                        </div>
+                        <p class="t-18">
+                            The eBook Reader is 
+                            a new way to look at 
+                            e-books.
+                        </p>
+                    </div>
+                    <div class="learn-more between-center">
+                        <span class="bodi-12-medium">Learn more</span>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" >
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M14.0909 7.26521C14.4968 6.8906 15.1294 6.9159 15.504 7.32172L18.7348 10.8217C19.0884 11.2047 19.0884 11.7952 18.7348 12.1782L15.504 15.6783C15.1294 16.0841 14.4968 16.1094 14.091 15.7348C13.6851 15.3602 13.6598 14.7276 14.0344 14.3217L15.716 12.5L6 12.5C5.44771 12.5 5 12.0523 5 11.5C5 10.9477 5.44771 10.5 6 10.5L15.716 10.5L14.0344 8.67829C13.6598 8.27247 13.6851 7.63981 14.0909 7.26521Z"/>
+                        </svg>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Book-steps -->
+        <div class="container between-center book-steps">
+            <div class="create-trip">
+                <div class="your-trip d-flex flex-column align-items-center">
+                    <div class="card-container">
+                        <div class="card-wrapper">
+                            <div class="card-content">
+                                <div class="card-heading">
+                                    <p class="bodi-18-bold">Create Your Trip</p>
+                                    <p class="bodi-16-regular">Set up all trip</p>
+                                </div>
+                                <button class="btn bodi-14-bold between-center">
+                                    Plan a Trip 
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <g id="icons/Arrow Right 2/Line">
+                                        <path id="vector (Stroke)" fill-rule="evenodd" clip-rule="evenodd" d="M14.0909 7.26521C14.4968 6.8906 15.1294 6.9159 15.504 7.32172L18.7348 10.8217C19.0884 11.2047 19.0884 11.7952 18.7348 12.1782L15.504 15.6783C15.1294 16.0841 14.4968 16.1094 14.091 15.7348C13.6851 15.3602 13.6598 14.7276 14.0344 14.3217L15.716 12.5L6 12.5C5.44771 12.5 5 12.0523 5 11.5C5 10.9477 5.44771 10.5 6 10.5L15.716 10.5L14.0344 8.67829C13.6598 8.27247 13.6851 7.63981 14.0909 7.26521Z"/>
+                                        </g>
+                                    </svg>
+                                </button>
+                                <div class="list column-start">
+                                    <div class="list-item column-end">
+                                        <p class="bodi-16-bold">Set Up your Account</p>
+                                        <p class="bodi-14-regular sub">Book your best exprience</p>
+                                    </div>
+                                    <div class="list-item column-end">
+                                        <p class="bodi-16-bold">Day by day Plan</p>
+                                        <p class="bodi-14-regular sub">Book your best exprience</p>
+                                    </div>
+                                    <div class="list-item column-end">
+                                        <p class="bodi-16-bold">Booking System</p>
+                                        <p class="bodi-14-regular sub">Book your best exprience</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <p class="fw-600 cost text-center">
+                            $50.00 <span>/ per Trip</span>
+                        </p>
+                    </div>
+                    <div class="indicator center-center">
+                        <p class="bodi-16-regular"><span>01</span>  /   03</p>
+                    </div>
+                </div>
+            </div>
+            <div class="book-content">
+                <h1>Book Easy 3 Steps</h1>
+                <p class="bodi-14-medium">Planning a trip is sometimes not easy. But Trip Plan will help you to manage time 
+                    and budget for your journey! There are only 3 steps: Create an 
+                    account, choose your destination city.</p>
+                <div class="list mt-30 column-start">
+                    <p class="list-item bodi-16-bold">Set Up your Account</p>
+                    <p class="list-item bodi-16-bold">Respond to Private requests</p>
+                    <p class="list-item bodi-16-bold">Book your Trip</p>
+                </div>
+                <p class="bodi-16-regular mt-20">“Plan your trip with a 3-step trip plan. Check in out at a glance, select
+                    hotel rooms on the go, and create a packing list”</p>
+                <div class="mt-50 profile">
+                    <img srcset="./assets/img/createTrip/avator.png 2x" alt="avator" class="rounded-circle mr-15">
+                    <div>
+                    <p class="bodi-18-bold">Steve Jobs</p>
+                    <p class="bodi-18-regular">Co-Founder and CEO</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Trip booking -->
+        <div class="trip-booking center-center">
+            <div class="left-content column-start">
+                <div class="heading column-start">
+                    <h1>Easy Trip Booking Website</h1>
+                    <p class="bodi-16-regular">
+                        A new way to book travel online, saving you time. With trip, There are 
+                        no confusing spreadsheets or complicated searches. We just ask the 
+                        right questions, find the best deal for you, then book it.
+                    </p>
+                </div>
+                <div class="cards">
+                    <!-- item -->
+                    <div class="card-item column-start">
+                        <img srcset="./assets/img/createTrip/logo-1.png 2x" alt="logo-brand">
+                        <div class="title column-start">
+                            <p class="fw-600">Trip Advisor</p>
+                            <p class="fw-500">
+                                Cheap Flights 
+                                Amazing Experiences
+                            </p>
+                        </div>
+                    </div>
+                    <!-- item -->
+                    <div class="card-item column-start">
+                        <img srcset="./assets/img/createTrip/logo-2.png 2x" alt="logo-brand">
+                        <div class="title column-start">
+                            <p class="fw-600">Arbn</p>
+                            <p class="fw-500">
+                                Choose From a Wide 
+                                Range of Properties 
+                                Which Booking.
+                            </p>
+                        </div>
+                    </div>
+                    <!-- item -->
+                    <div class="card-item column-start">
+                        <img srcset="./assets/img/createTrip/logo-3.png 2x" alt="logo-brand">
+                        <div class="title column-start">
+                            <p class="fw-600">Turkish Kargo</p>
+                            <p class="fw-500">
+                                Best Flights 
+                                Amazing Services
+                            </p>
+                        </div>
+                    </div>
+                    <!-- item -->
+                    <div class="card-item column-start">
+                        <img srcset="./assets/img/createTrip/logo-4.png 2x" alt="logo-brand">
+                        <div class="title column-start">
+                            <p class="fw-600">Itata</p>
+                            <p class="fw-500">
+                                Cheap Flights 
+                                Amazing Experiences
+                            </p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <div class="right-content">
+                <!-- <img srcset="./assets/img/createTrip/card.png 2x" alt="card"> -->
+            </div>
+        </div>
+    </div>
+</body>
+</html>
